@@ -1,3 +1,4 @@
+
 1. Install java compiler and runtime
 
     % cd ~/Downloads
@@ -40,8 +41,12 @@
     screen and how to make it do stuff. In our code, later, we will teach it to
     do new stuff and also ask it to do stuff it already knows how to do.
 
+3. Fetch this code
+   cd
+   git clone git@github.com:random220/karelj.git
+   cd karelj
 
-3. Create your first test program
+4. Create your first test program
 
    cd anaya
    #create a file Tester.java here. Give it this content
