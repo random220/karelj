@@ -33,22 +33,36 @@
     You don't even have to do it. I already downloaded and extracted the zip file
     in the SIM directory
 
+    There is only one file that is of interest to us presently
+    SIM/KarelJRobot.jar
 
-3. Run the include sample program to see it in work 
-
-    cd SIM
-
-    # compile the program StairClimber.java and link it with
-    # the simulation library KarelJRobot.jar
-
-    javac -classpath KarelJRobot.jar StairClimber.java
-
-    # That would produce the comiled file StairClimber.class
-    # Now, run that program
-
-    java -classpath KarelJRobot.jar StairClimber
+    That file is the simulator library. It knows how to draw the robot on the
+    screen and how to make it do stuff. In our code, later, we will teach it to
+    do new stuff and also ask it to do stuff it already knows how to do.
 
 
+3. Create your first test program
+
+   cd anaya
+   #create a file Tester.java here. Give it this content
+
+//------------------------------------------------
+import kareltherobot.*;
+
+public class Tester implements Directions {
+    public static void main(String [] args)
+    {
+        World.setVisible(true);
+        UrRobot karel = new UrRobot(3, 3, East, 3);
+        UrRobot steve = new UrRobot(3, 4, West, 3);
+    }
+}
+//------------------------------------------------
+
+    # Now run this code
+    java -classpath ../SIM/KarelJRobot.jar Tester.java
+
+    It simply delivers two robots facing each other at 3,3 and 3,4
 
 
 
