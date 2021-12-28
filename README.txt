@@ -23,14 +23,30 @@
     Download simulator from this page https://csis.pace.edu/~bergin/KarelJava2ed/downloads.html
     [Just go to the bottom of the page and hit "Get the Zip" button]
 
-    Or
+    Or,
     
     Just download it from here:
     https://github.com/random220/karelj/raw/master/KJRDistribution160819.zip
 
     Or,
+
     You don't even have to do it. I already downloaded and extracted the zip file
     in the SIM directory
+
+
+3. Run the include sample program to see it in work 
+
+    cd SIM
+
+    # compile the program StairClimber.java and link it with
+    # the simulation library KarelJRobot.jar
+
+    javac -d . -cp .:KarelJRobot.jar StairClimber.java
+
+    # That would produce the comiled file StairClimber.class
+    # Now, run that program
+
+    java -cp .:KarelJRobot.jar StairClimber
 
 
 
