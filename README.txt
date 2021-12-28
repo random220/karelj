@@ -41,12 +41,12 @@
     # compile the program StairClimber.java and link it with
     # the simulation library KarelJRobot.jar
 
-    javac -d . -cp .:KarelJRobot.jar StairClimber.java
+    javac -classpath KarelJRobot.jar StairClimber.java
 
     # That would produce the comiled file StairClimber.class
     # Now, run that program
 
-    java -cp .:KarelJRobot.jar StairClimber
+    java -classpath KarelJRobot.jar StairClimber
 
 
 
