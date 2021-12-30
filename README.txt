@@ -80,3 +80,5 @@ References:
             java -classpath kareluniverse.jar karel.KarelUniverse
             or
             java -jar kareluniverse.jar
+            or, funnily, this works too
+            java -jar KarelJRobot.jar
